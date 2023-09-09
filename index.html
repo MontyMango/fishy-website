@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>C308 Website Project</title>
     <meta name="description" content="A C308 website project about fishes">
+    <link rel="stylesheet" href="CSS/mainpage.css">
 </head>
 
 <header>
@@ -12,12 +13,34 @@
 </header>
 
 <body>
-    <li>
-        <p>Some page... I think goes here</p>
-    </li>
-    <li>
-        <p>This is a list but more fish will appear here</p>
-    </li>
+    <ul>
+        <!-- Animal #1: -->
+        <li>
+            <div class="animal">
+                <!--Helped me here: https://www.delftstack.com/howto/html/text-next-to-image-html/ -->
+                <div class="img" style="float:left">
+                    <p>some fish picture goes here</p>
+                </div>
+                <div style="float: right">
+                    <p><-- This is some fish picture that goes here, it is pretty</p>
+                </div>
+            </div>
+        </li>
+
+
+        <!-- Animal #2: -->
+        <li>
+            <div class="animal">
+                <div style="float: left">
+                    <p>This is some fish picture that goes here, it is pretty --></p>
+                </div>
+                <div class="img" style="float:right">
+                    <p>some fish picture goes here</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
 </body>
 
 </html>
