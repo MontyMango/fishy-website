@@ -7,3 +7,6 @@ This is where you will place images, hopefully. These are some stuff to follow s
 - Make sure that the image is >25MB (It will count as a large object in GutHub)
 
 That's mostly it, and thanks! 
+
+
+#This is from Alex H, I will upload comments at the top of the page regarding issues or changes referenced from the discord.
