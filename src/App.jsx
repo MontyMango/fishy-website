@@ -9,15 +9,17 @@ function App() {
   return (
     <div className="gradient-background">
       <p>Dive Below</p>
-      <Link to="/Bass">
-        <img src={Bass} alt="Bass" />
-      </Link>
-      <Link to="/Crab">
-        <img src={Crab} alt="Crab" />
-      </Link>
-      <Link to="/ClownFish">
-        <img src={ClownFish} alt="ClownFish" />
-      </Link>
+      <div>
+        <Link to="/Bass">
+          <img src={Bass} alt="Bass" />
+        </Link>
+        <Link to="/Crab">
+          <img src={Crab} alt="Crab" />
+        </Link>
+        <Link to="/ClownFish">
+          <img src={ClownFish} alt="ClownFish" />
+        </Link>
+      </div>
     </div>
   );
 }
