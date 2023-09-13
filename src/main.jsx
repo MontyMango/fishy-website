@@ -6,6 +6,7 @@ import App from "./App";
 import { Helmet } from "react-helmet";
 import Bass from "./routes/Bass";
 import Crab from "./routes/Crab";
+import ClownFish from "./routes/ClownFish";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,17 @@ const router = createBrowserRouter([
           <title>Crab</title>
         </Helmet>
         <Crab />
+      </>
+    ),
+  },
+  {
+    path: "/ClownFish",
+    element: (
+      <>
+        <Helmet>
+          <title>ClownFish</title>
+        </Helmet>
+        <ClownFish />
       </>
     ),
   },
