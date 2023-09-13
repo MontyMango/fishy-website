@@ -3,8 +3,9 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import Fish1 from "./routes/Fish1";
 import { Helmet } from "react-helmet";
+import Bass from "./routes/Bass";
+import Crab from "./routes/Crab";
 
 const router = createBrowserRouter([
   {
@@ -19,13 +20,24 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Fish1",
+    path: "/Bass",
     element: (
       <>
         <Helmet>
-          <title>Fish 1</title>
+          <title>Bass</title>
         </Helmet>
-        <Fish1 />
+        <Bass />
+      </>
+    ),
+  },
+  {
+    path: "/Crab",
+    element: (
+      <>
+        <Helmet>
+          <title>Crab</title>
+        </Helmet>
+        <Crab />
       </>
     ),
   },
