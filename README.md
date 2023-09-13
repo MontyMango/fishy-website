@@ -13,7 +13,8 @@ That's mostly it, and thanks!
 
 > This is Cameron replying to Alex H, ok cool
 
-#This is from Nathan, I added the Javascript backbone for the website.
+# This is from Nathan, I added the Javascript backbone for the website.
+
 Guide to starting the Local Website:
 1: Clone repository Open in VScode
 2: Open terminal in VScode
