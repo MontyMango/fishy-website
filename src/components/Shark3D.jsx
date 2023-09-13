@@ -7,7 +7,7 @@ import {
   PerspectiveCamera,
 } from "@react-three/drei";
 import { easing } from "maath";
-import { Shark } from "./Shark";
+import { Shark } from "./Tiger_shark";
 
 function SceneCamera() {
   const { camera } = useThree();
@@ -56,10 +56,14 @@ const Shark3D = (props) => {
         >
           <OrbitControls enableZoom={true} />
           <ambientLight intensity={0.5} />
-          <directionalLight position={[-2, 5, 3]} intensity={1} />
+          <directionalLight position={[-2, 0, 3]} intensity={1} />
 
           <Suspense fallbak={null}>
-            <Shark scale={0.005} />
+            <Shark
+              position={[0, -1, 0]}
+              scale={0.05}
+              rotation={[0.2, 0.8, 0]}
+            />
           </Suspense>
         </Canvas>
       </div>

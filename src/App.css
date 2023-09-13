@@ -1,17 +1,24 @@
 body {
   background-size: 100%;
-  background-image: repeating-linear-gradient(
-    to bottom,
-
-    #0478f4,
-    #000000
-  );
+  background-image: repeating-linear-gradient(to bottom, #0478f4, #000000);
   background-attachment: fixed;
-  height: 100%;
   margin: 0;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
   font-size: 2rem;
+  /* Remove or adjust the height property */
+  /* height: 100%; */
+}
+.container {
+  display: flex;
+  justify-content: space-around; /* Adjust this value for spacing */
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap to the next row if there's not enough space */
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
 }
