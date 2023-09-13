@@ -4,6 +4,7 @@ import "./App.css";
 import Bass from "/Assets/bass.png";
 import Crab from "/Assets/a_crab.png";
 import ClownFish from "/Assets/clownfish.png";
+import Shark3D from "./components/Shark3D";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <img src={ClownFish} alt="ClownFish" />
         </Link>
       </div>
+      <Shark3D />
     </div>
   );
 }
