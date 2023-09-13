@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./App.css";
+import Bass from "/Assets/bass.png";
 
 function App() {
   return (
     <div>
       <p>Hello</p>
       <Link to="/Fish1">
-        <button>Fish1</button>
+        <img src={Bass} alt="Fish1" />{" "}
       </Link>
     </div>
   );
