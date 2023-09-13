@@ -16,6 +16,7 @@ That's mostly it, and thanks!
 # This is from Nathan, I added the Javascript backbone for the website.
 
 Guide to starting the Local Website:
+Make sure you have Node JS installed on your pc: https://nodejs.org/en
 1: Clone repository Open in VScode
 2: Open terminal in VScode
 3: Run command: npm install 4. Run command: npm run dev
