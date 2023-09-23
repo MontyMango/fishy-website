@@ -11,9 +11,7 @@ h1  {
 }
 
 /* For the lists */
-.animal   {
-
-}
+.animal
 
 .img    {
     width: 65%;
@@ -30,4 +28,14 @@ p   {
     padding: 25px;
     background-color: aquamarine;
     border: brown;
+}
+
+body    {
+    background-image: linear-gradient(rgb(0, 153, 255),rgb(6, 0, 83));
+    color: white;
+
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
 }
