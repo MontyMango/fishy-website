@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Assets/Waves.png" />
-    <link rel="" type="text/css" href="CSS/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deep</title>
+    <title>Deep Dive</title>
   </head>
 
   <body>
-    <div id="root"></div>
+    <!-- <div id="root"></div> -->
     <script type="module" src="/src/main.jsx"></script>
 
-    <!-- Top, where the title goes -->
-    <div class="">
 
+    <!-- Top, where the title goes -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+          <h1>Dive below!</h1>
+        </div>
+      </div>
     </div>
 
     <!-- Body, where the fish goes -->
@@ -23,62 +29,59 @@
       <!-- First fish -->
       <div class="row">
 
-        <!--Left Column-->
-        <div class="col-sm-4"> 
-          <h3>Some kind of fish goes here</h3>
+        <!--Title Column-->
+        <div class="col-lg"> 
+          <h1>This is the crab</h1>
         </div>
+        
+        <!--Photo & Description Column-->
+        <div class="row">
+          <!--Middle Column-->
+          <div class="col-lg-auto"> 
+            <img src="/Assets/a_crab.png" alt="A crab"/>
+          </div>
+  
 
-        <!--Middle Column-->
-        <div class="col-sm-4"> 
-          <h2>Awesome fish!</h2>
-        </div>
-
-        <!--Right Column-->
-        <div class="col-sm-4"> 
-          <h4>I think more fish could go here too</h4>
+          <!--Right Column-->
+          <div class="col-md"> 
+            <p>
+              This crab sometimes crawls on the beach and sometimes pinches people.
+            </p>
+          </div>
         </div>
       </div>
-
 
 
       <!-- Second fish -->
       <div class="row">
+
+        <!--Title Column-->
+        <div class="col-lg"> 
+          <h2>This is the Clownfish</h2>
+        </div>
         
-        <!--Left Column-->
-        <div class="col-sm-4"> 
-          <h2>Some more awesome fish!</h2>
-        </div>
-
-        <!--Middle Column-->
-        <div class="col-sm-4"> 
-          <h3>more fish photos</h3>
-        </div>
-
+        <!--Photo & Description Column-->
         <!--Right Column-->
-        <div class="col-sm-4"> 
-          <h4>yes more fish photos</h4>
+        <div class="row">
+          <div class="col-sm-6"> 
+            <p>
+              This fish looks cool, but I don't know if they can breath in that water.
+            </p>
+          </div>
+          <div class="row">
+            <!--Middle Column-->
+            <div class="col-lg-auto"> 
+              <img src="/Assets/clownfish.png" alt="Picture of a clownfish"/>
+            </div>
+          </div>
         </div>
       </div>
 
 
-
-      <!-- Third fish -->
-      <div class="row">
-                <!--Left Column-->
-        <div class="col-sm-4"> 
-          <h5>yea no fish goes here</h5>
-        </div>
-
-        <!--Middle Column-->
-        <div class="col-sm-4"> 
-          <h5>No fish</h5>
-        </div>
-
-        <!--Right Column-->
-        <div class="col-sm-4"> 
-          <h6>nope</h6>
-        </div>
-      </div>
-    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
