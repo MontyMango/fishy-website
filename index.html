@@ -5,46 +5,50 @@
     <link rel="icon" type="image/svg+xml" href="/Assets/Waves.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/mainpage.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="This is a fishing website"/>
     <title>Deep Dive</title>
   </head>
-
+  
   <body>
     <!-- <div id="root"></div> -->
     <script type="module" src="/src/main.jsx"></script>
 
-
     <!-- Top, where the title goes -->
     <div class="container">
       <div class="row">
-        <div class="col-md-1">
+        <!-- Background images won't work here: https://www.w3schools.com/css/css_background_image.asp -> /Assets/waves.jpg-->
+        <div class="col-lg-auto" style="padding: 300px; background-image: url(/Assets/waves.jpg);">
           <h1>Dive below!</h1>
         </div>
       </div>
     </div>
 
+
     <!-- Body, where the fish goes -->
     <div class="container">
       
-      <!-- First fish -->
+
+      <!-- Fish #1: Crab -->
       <div class="row">
 
         <!--Title Column-->
-        <div class="col-lg"> 
+        <div class="col-sm"> 
           <h1>This is the crab</h1>
         </div>
         
         <!--Photo & Description Column-->
         <div class="row">
-          <!--Middle Column-->
+          <!-- Photo Column-->
           <div class="col-lg-auto"> 
             <img src="/Assets/a_crab.png" alt="A crab"/>
           </div>
   
 
-          <!--Right Column-->
-          <div class="col-md"> 
-            <p>
+          <!--Description Column-->
+          <div class="col-md img" style="float: right;"> 
+            <p class="right">
               This crab sometimes crawls on the beach and sometimes pinches people.
             </p>
           </div>
@@ -52,24 +56,25 @@
       </div>
 
 
-      <!-- Second fish -->
+      <!-- Fish #2: Clownfish -->
       <div class="row">
 
         <!--Title Column-->
         <div class="col-lg"> 
-          <h2>This is the Clownfish</h2>
+          <h1>This is the Clownfish</h1>
         </div>
         
         <!--Photo & Description Column-->
-        <!--Right Column-->
         <div class="row">
+          <!--Description Column-->
           <div class="col-sm-6"> 
-            <p>
+            <p class="left">
               This fish looks cool, but I don't know if they can breath in that water.
             </p>
           </div>
+
           <div class="row">
-            <!--Middle Column-->
+            <!-- Photo Column-->
             <div class="col-lg-auto"> 
               <img src="/Assets/clownfish.png" alt="Picture of a clownfish"/>
             </div>
