@@ -3,30 +3,61 @@ ul  {
 }
 
 h1  {
-    font-family: Castellar, fantasy;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* For the lists */
 .animal
 
 .img    {
-    width: 65%;
-    font-size: 1000px;
+    height: 50%;
+}
+
+.title  {
+
 }
 
 .left   { float: left;}
 .right  { float: right;}
 
-/* For Animal titles  */
-h2  {
+.sky    {
+    font-style: italic;
+}
 
+/* Makes the animals look like they are underwater */
+.water {
+    background-image: linear-gradient(rgb(0, 165, 206),rgb(1, 10, 87));
+    --mask:
+      radial-gradient(34.99px at 50% 48.00px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+      radial-gradient(34.99px at 50% -18px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+
+
+/* ANIMAL TITLES AND DESCRIPTIONS*/
+a   {
+    color: orange;
+}
+
+a:hover {
+    color:red;
+}
+
+/* Animal links */
+h5  {
+    width: 90%;
+    padding: 25px;
+    font-size: x-large;
+    background-image: linear-gradient(rgba(179, 80, 0, 0.397), rgba(0, 174, 255, 0.205));
+    border-radius: 15px;
 }
 
 /* For Animal text descriptions */
 p   {
-    width: 50%;
+    width: 90%;
     padding: 25px;
-    background-image: linear-gradient(rgb(0, 55, 236),rgb(6, 0, 83));
+    background-image: linear-gradient(rgba(0, 65, 70, 0.397), rgba(0, 79, 116, 0.274));
     border-radius: 15px;
     font-size: large;
 }
