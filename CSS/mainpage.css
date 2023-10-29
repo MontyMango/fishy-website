@@ -72,3 +72,32 @@ body    {
 
     padding: 100px;
 }
+
+/* USED FOR TOP MENU */
+/* NAVBAR MENU */
+/*
+.navbar {
+    display: inline;
+    align-items: left;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 208, 255, 0.062);
+    color: #ffffff;
+  }
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+  
+.menu li {
+    padding: 5px 14px;
+}
+*/
