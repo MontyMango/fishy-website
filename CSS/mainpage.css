@@ -6,13 +6,27 @@ h1  {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* For navigation bar */
+ul  {
+    width: 100%;
+    background-color: rgba(101, 0, 148, 0.144);
+    display: inline-block;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul a    {
+    color: wheat;
+}
+ul a:hover  {
+    color:red;
+}
+
 /* For the lists */
 .img    {
     height: 75%;
-}
-
-.title  {
-
 }
 
 .left   { float: left;}
@@ -24,7 +38,7 @@ h1  {
 
 /* Makes the animals look like they are underwater */
 .water {
-    background-image: linear-gradient(rgb(0, 165, 206),rgb(1, 10, 87));
+    background-image: linear-gradient(rgb(0, 165, 206),rgb(0, 6, 65));
     --mask:
       radial-gradient(34.99px at 50% 48.00px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
       radial-gradient(34.99px at 50% -18px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
@@ -70,5 +84,13 @@ body    {
     background-image: linear-gradient(rgb(0, 153, 255),rgb(6, 0, 83));
     color: white;
 
-    padding: 100px;
+    padding: 75px;
 }
+
+
+/* This is for mobile formatting (Hopefully we will get to this later)
+@media  and (max-width: 1024px) 
+{
+    
+}
+*/
