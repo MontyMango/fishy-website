@@ -75,13 +75,39 @@ function App() {
 
   return (
     <>
+      <header>
+        {/* {/* Top, where the title goes */}
+        <div className="container">
+          <div className="row">
+            <div className="col-lg">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpngimg.com%2Fuploads%2Fsnorkel%2Fsnorkel_PNG20.png&f=1&nofb=1&ipt=af1773e9c2bcea53a30e9f3a2ad836adbc1f46d121209226a84555af2f87955c&ipo=images"
+                style={{ height: 250 }}
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg">
+              <h1>Dive below!</h1>
+              <h6>But don't forget your scuba gear!</h6>
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Body, where the fish goes */}
-      <div className="container water" style={{ paddingTop: "15%" }}>
+      <div
+        className="container water"
+        style={{ paddingTop: "5%", paddingBottom: "5%" }}
+      >
         {/* Fish #1: Crab */}
         {array.slice(0, 15).map((animal, index) => {
           if (index % 2 == 0) {
             return (
-              <div className="row">
+              <div
+                className="row"
+                style={{ paddingTop: "5%", paddingBottom: "5%" }}
+              >
                 {/*Title Column*/}
                 <div className="col-lg-12">
                   <h1>
@@ -97,7 +123,13 @@ function App() {
                     </a>
                   </div>
                   {/* Right Description Column */}
-                  <div className="col-lg-6">
+                  <div
+                    className="col-lg-6"
+                    style={{
+                      height: "200px",
+                      width: "800px",
+                    }}
+                  >
                     <p>{animal.facts}</p>
                     <h5>
                       <a href="/">Learn more about the {animal.name}!</a>
@@ -108,7 +140,10 @@ function App() {
             );
           } else {
             return (
-              <div className="row">
+              <div
+                className="row"
+                style={{ paddingTop: "5%", paddingBottom: "5%" }}
+              >
                 {/*Title Column*/}
                 <div className="col-lg-12" style={{ float: "right" }}>
                   <h1>
@@ -118,7 +153,14 @@ function App() {
                 {/* Photo & Description Column */}
                 <div className="row">
                   {/* Left Description Column */}
-                  <div className="col-lg-6" style={{ paddingLeft: "9%" }}>
+                  <div
+                    className="col-lg-6"
+                    style={{
+                      paddingLeft: "09%",
+                      height: "200px",
+                      width: "1000px",
+                    }}
+                  >
                     <p>{animal.facts}</p>
                     <h5>
                       <a href={animal.link}>
