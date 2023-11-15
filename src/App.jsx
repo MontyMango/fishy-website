@@ -219,6 +219,22 @@ function App() {
             </div>
           </div>
         </div>
+        <footer>
+          <div
+            className="container"
+            style={{ paddingTop: "5%", paddingLeft: "10%" }}
+          >
+            <div className="row">
+              <div className="col-lg-12">
+                <p>
+                  This informative website was made possible by team 3 (Nathan
+                  Bilancio, Cameron Harter, Alexander Hershberger, and Palmer
+                  Vu)
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
