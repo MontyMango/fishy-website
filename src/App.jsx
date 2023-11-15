@@ -136,7 +136,7 @@ function App() {
   return (
     <>
       <header>
-        {/* {/* Top, where the title goes */}
+        {/* Top, where the title goes */}
         <div className="container">
           <div className="row">
             <div className="col-lg">
