@@ -108,6 +108,12 @@ function App() {
       link: "/octo",
       thumbnail: "/Assets/sbr_octopus.png",
     },
+    {
+      name: "Flounder",
+      facts: "Flounder Fact                         ",
+      link: "/Flounder",
+      thumbnail: "/Assets/flounder.png",
+    },
   ]);
 
   useEffect(() => {
@@ -228,7 +234,9 @@ function App() {
                       className="col-lg-10 img"
                       style={{ paddingLeft: "10%" }}
                     >
-                      <img src={animal.thumbnail} />
+                      <a href={animal.link}>
+                        <img src={animal.thumbnail} />
+                      </a>
                     </div>
                   </div>
                 </div>

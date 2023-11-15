@@ -8,7 +8,7 @@ h1 {
 
 /* For navigation bar */
 ul {
-  width: 100%;
+  width: 80%;
   background-color: rgba(101, 0, 148, 0.144);
   display: inline-block;
   font-size: 25px;

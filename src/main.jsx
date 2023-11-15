@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Bass",
+    path: "/bass",
     element: (
       <>
         <Helmet>
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/Crab",
+    path: "/crab",
     element: (
       <>
         <Helmet>
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/ClownFish",
+    path: "/clownFish",
     element: (
       <>
         <Helmet>
