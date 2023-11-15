@@ -40,7 +40,7 @@ function App() {
       name: "Octopus",
       facts: "Octopus Fact                          ",
       link: "/octopus",
-      thumbnail: "/Assets/sbr_octopus.png",
+      thumbnail: "/Assets/p_octopus.png",
     },
     {
       name: "Shark",
@@ -65,6 +65,48 @@ function App() {
       facts: "Penguin Fact                         ",
       link: "/penguin",
       thumbnail: "/Assets/penguin.png",
+    },
+    {
+      name: "Bass",
+      facts: "Bass Fact                         ",
+      link: "/bass",
+      thumbnail: "/Assets/bass.png",
+    },
+    {
+      name: "Angle Fish",
+      facts: "Angle Fish Fact                         ",
+      link: "/angleFish",
+      thumbnail: "/Assets/cr_anglefish.png",
+    },
+    {
+      name: "Dolphin",
+      facts: "Dolphin Fact                         ",
+      link: "/dolphin",
+      thumbnail: "/Assets/dolphin.png",
+    },
+    {
+      name: "Humpback Whale",
+      facts: "Humpback Whale Fact                         ",
+      link: "/humbackWhale",
+      thumbnail: "/Assets/h_whale.png",
+    },
+    {
+      name: "Shrimp",
+      facts: "Shrimp Fact                         ",
+      link: "/shrimp",
+      thumbnail: "/Assets/shrimp.png",
+    },
+    {
+      name: "Walrus",
+      facts: "Walrus Fact                         ",
+      link: "/walrus",
+      thumbnail: "/Assets/walrus.png",
+    },
+    {
+      name: "Different Octopus????",
+      facts: "Octo Fact                         ",
+      link: "/octo",
+      thumbnail: "/Assets/sbr_octopus.png",
     },
   ]);
 
@@ -127,7 +169,7 @@ function App() {
                   </h1>
                 </div>
                 {/*Photo & Description Column */}
-                <div className="row">
+                <div className="row" style={{ paddingTop: "10%" }}>
                   {/* Left Photo Column*/}
                   <div className="col-lg-6 img">
                     <a href={animal.link}>
@@ -163,7 +205,7 @@ function App() {
                   </h1>
                 </div>
                 {/* Photo & Description Column */}
-                <div className="row">
+                <div className="row" style={{ paddingTop: "10%" }}>
                   {/* Left Description Column */}
                   <div
                     className="col-lg-6"
