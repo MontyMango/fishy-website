@@ -236,7 +236,7 @@ function App() {
             );
           }
         })}
-        <p style={{ fontSize: "1em" }}>Not seeing your fish?</p>
+        <p style={{ fontSize: "1em" }}>Not seeing your animal?</p>
         <div className="container">
           <div className="row">
             <div className="col-lg">
