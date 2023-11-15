@@ -73,6 +73,18 @@ function App() {
     setArray(shuffleArray([...array]));
   }, []);
 
+  const handleDropdownChange = (event) => {
+    const selectedAnimalName = event.target.value;
+    const selectedAnimalObject = array.find(
+      (animal) => animal.name === selectedAnimalName
+    );
+
+    if (selectedAnimalObject) {
+      // Redirect to the selected animal's link
+      window.location.href = selectedAnimalObject.link;
+    }
+  };
+
   return (
     <>
       <header>
@@ -182,10 +194,31 @@ function App() {
             );
           }
         })}
-        {/* Fish #2: Clownfish */}
-
-        {/* OptionaJavaScript */}
-        {/* jQuery first, then Popper.js, then Bootstrap JS */}
+        <p style={{ fontSize: "1em" }}>Not Seeing your fish?</p>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg">
+              <select
+                className="form-select"
+                aria-label="Select an animal"
+                onChange={handleDropdownChange}
+                style={{
+                  backgroundColor: "#333", // Change background color
+                  color: "#fff", // Change text color
+                }}
+              >
+                <option value="" disabled selected>
+                  Select an animal
+                </option>
+                {array.map((animal) => (
+                  <option key={animal.name} value={animal.name}>
+                    {animal.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
