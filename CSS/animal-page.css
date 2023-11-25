@@ -1,0 +1,10 @@
+.description {
+    width: 90%;
+    padding: 25px;
+    background-image: linear-gradient(
+      rgba(0, 178, 190, 0.397),
+      rgba(0, 79, 116, 0.274)
+    );
+    border-radius: 15px;
+    font-size: large;
+}
