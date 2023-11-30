@@ -114,6 +114,12 @@ function App() {
       link: "/Flounder",
       thumbnail: "/Assets/flounder.png",
     },
+    {
+      name: "New Animal",
+      facts: "New facts                         ",
+      link: "/Flounder",
+      thumbnail: "/Assets/flounder.png",
+    },
   ]);
 
   useEffect(() => {
