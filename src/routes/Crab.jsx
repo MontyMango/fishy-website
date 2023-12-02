@@ -5,6 +5,7 @@ function Crab() {
   return (
     <div style={{ width: "100%" }}>
       <p>Crab</p>
+      <img style={{height: "400px", width: "400px"}} src={"../../Assets/a2_crab.png"} />
       <Crab3D />
     </div>
   );
