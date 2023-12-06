@@ -8,6 +8,19 @@ import Bass from "./routes/Bass";
 import Crab from "./routes/Crab";
 import ClownFish from "./routes/ClownFish";
 import Dolphin from "./routes/Dolphin";
+import AngleFish from "./routes/AngleFish";
+import Flounder from "./routes/Flounder";
+import HumpbackWhale from "./routes/HumpbackWhale";
+import KingPenguin from "./routes/KingPenguin";
+import PacificOctopus from "./routes/PacificOctopus";
+import SouthBlueRingOctopus from "./routes/SouthBlueRingOctopus";
+import Orca from "./routes/Orca";
+import Seahorse from "./routes/Seahorse";
+import Seal from "./routes/Seal";
+import Shrimp from "./routes/Shrimp";
+import Walrus from "./routes/Walrus";
+import WhiteShark from "./routes/WhiteShark";
+import OrnateBoxTurtle from "./routes/OrnateBoxTurtle";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +31,17 @@ const router = createBrowserRouter([
           <title>Dive Below</title>
         </Helmet>
         <App />
+      </>
+    ),
+  },
+  {
+    path: "/angleFish",
+    element: (
+      <>
+        <Helmet>
+          <title>Angle Fish</title>
+        </Helmet>
+        <AngleFish />
       </>
     ),
   },
@@ -33,17 +57,6 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/crab",
-    element: (
-      <>
-        <Helmet>
-          <title>Crab</title>
-        </Helmet>
-        <Crab />
-      </>
-    ),
-  },
-  {
     path: "/clownFish",
     element: (
       <>
@@ -55,6 +68,17 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/crab",
+    element: (
+      <>
+        <Helmet>
+          <title>Crab</title>
+        </Helmet>
+        <Crab />
+      </>
+    ),
+  },
+  {
     path: "/dolphin",
     element: (
       <>
@@ -62,6 +86,138 @@ const router = createBrowserRouter([
           <title>Dolphin</title>
         </Helmet>
         <Dolphin />
+      </>
+    ),
+  },
+  {
+    path: "/flounder",
+    element: (
+      <>
+        <Helmet>
+          <title>Flounder</title>
+        </Helmet>
+        <Flounder />
+      </>
+    ),
+  },
+  {
+    path: "/humpbackWhale",
+    element: (
+      <>
+        <Helmet>
+          <title>Humpback Whale</title>
+        </Helmet>
+        <HumpbackWhale />
+      </>
+    ),
+  },
+  {
+    path: "/kingPenguin",
+    element: (
+      <>
+        <Helmet>
+          <title>King Penguin</title>
+        </Helmet>
+        <KingPenguin />
+      </>
+    ),
+  },
+  {
+    path: "/octopus",
+    element: (
+      <>
+        <Helmet>
+          <title>Pacific Octopus</title>
+        </Helmet>
+        <PacificOctopus />
+      </>
+    ),
+  },
+  {
+    path: "/octo",
+    element: (
+      <>
+        <Helmet>
+          <title>South Blue Ring Octopus</title>
+        </Helmet>
+        <SouthBlueRingOctopus />
+      </>
+    ),
+  },
+  {
+    path: "/orca",
+    element: (
+      <>
+        <Helmet>
+          <title>Orca</title>
+        </Helmet>
+        <Orca />
+      </>
+    ),
+  },
+  {
+    path: "/seahorse",
+    element: (
+      <>
+        <Helmet>
+          <title>Seahorse</title>
+        </Helmet>
+        <Seahorse />
+      </>
+    ),
+  },
+  {
+    path: "/seal",
+    element: (
+      <>
+        <Helmet>
+          <title>Seal</title>
+        </Helmet>
+        <Seal />
+      </>
+    ),
+  },
+  {
+    path: "/shark",
+    element: (
+      <>
+        <Helmet>
+          <title>White Shark</title>
+        </Helmet>
+        <WhiteShark />
+      </>
+    ),
+  },
+  {
+    path: "/shrimp",
+    element: (
+      <>
+        <Helmet>
+          <title>Shrimp</title>
+        </Helmet>
+        <Shrimp />
+      </>
+    ),
+  },
+  {
+    path: "/turtle",
+    element: (
+      <>
+        <Helmet>
+          <title>Ornate Box Turtle</title>
+        </Helmet>
+        <OrnateBoxTurtle />
+      </>
+    ),
+  },
+  {
+    path: "/walrus",
+    element: (
+      <>
+        <Helmet>
+          <title>Walrus</title>
+        </Helmet>
+        <Walrus />
       </>
     ),
   },

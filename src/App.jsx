@@ -13,7 +13,8 @@ function App() {
   const [array, setArray] = useState([
     {
       name: "Angle Fish",
-      facts: "Likes to eat sponges and algae, but can also nibble on sea fans, soft coral, and even jellyfish!",
+      facts:
+        "Likes to eat sponges and algae, but can also nibble on sea fans, soft coral, and even jellyfish!",
       link: "/angleFish",
       thumbnail: "/Assets/angelfish.png",
     },
@@ -26,13 +27,15 @@ function App() {
     },
     {
       name: "Bass",
-      facts: "Sea bass are carnivorous, feeding on fish, crustaceans, mollusks, and other invertebrates.",
+      facts:
+        "Sea bass are carnivorous, feeding on fish, crustaceans, mollusks, and other invertebrates.",
       link: "/bass",
       thumbnail: "/Assets/bass.png",
     },
     {
       name: "Clownfish",
-      facts: "A layer of mucus on clownfish`s skin makes it immune to fish-eating anemone`s stings.",
+      facts:
+        "A layer of mucus on clownfish`s skin makes it immune to fish-eating anemone`s stings.",
       link: "/clownFish",
       thumbnail: "/Assets/clownfish.png",
     },
@@ -44,20 +47,22 @@ function App() {
     },
     {
       name: "Flounder",
-      facts: "Called chameleons of the sea - can change color to blend in with their environment",
-      link: "/Flounder",
+      facts:
+        "Called chameleons of the sea - can change color to blend in with their environment",
+      link: "/flounder",
       thumbnail: "/Assets/flounder.png",
     },
     {
       name: "Humpback Whale",
-      facts: "Will occasionally come together in a “super” group of 200 (unknown why).",
-      link: "/humbackWhale",
+      facts:
+        "Will occasionally come together in a “super” group of 200 (unknown why).",
+      link: "/humpbackWhale",
       thumbnail: "/Assets/h_whale.png",
     },
     {
       name: "King Penguin",
       facts: "Can scarf down as many as 2000 fish in a single day.",
-      link: "/penguin",
+      link: "/kingPenguin",
       thumbnail: "/Assets/penguin.png",
     },
     {
@@ -68,7 +73,8 @@ function App() {
     },
     {
       name: "Orca",
-      facts: "Uses echolocation to communicate, attack, and work together. Also known as killer whales.",
+      facts:
+        "Uses echolocation to communicate, attack, and work together. Also known as killer whales.",
       link: "/orca",
       thumbnail: "/Assets/orca.png",
     },
@@ -86,13 +92,15 @@ function App() {
     },
     {
       name: "Seal",
-      facts: "Cannot use hind flippers to move on land, so it “bounces” instead.",
+      facts:
+        "Cannot use hind flippers to move on land, so it “bounces” instead.",
       link: "/seal",
       thumbnail: "/Assets/seal.png",
     },
     {
       name: "South Blue Ring Octopus",
-      facts: "Potent venom strong enough to kill a human (no known anti-venom to treat bitten person).",
+      facts:
+        "Potent venom strong enough to kill a human (no known anti-venom to treat bitten person).",
       link: "/octo",
       thumbnail: "/Assets/sbr_octopus.png",
     },
@@ -104,13 +112,15 @@ function App() {
     },
     {
       name: "Walrus",
-      facts: "Male walruses employ their tusks aggressively to maintain territory.",
+      facts:
+        "Male walruses employ their tusks aggressively to maintain territory.",
       link: "/walrus",
       thumbnail: "/Assets/walrus.png",
     },
     {
       name: "White Shark",
-      facts: "Has special cells (melanocytes) that helps with their cloaking ability to sneak up on prey.",
+      facts:
+        "Has special cells (melanocytes) that helps with their cloaking ability to sneak up on prey.",
       link: "/shark",
       thumbnail: "/Assets/shark.png",
     },
@@ -160,7 +170,6 @@ function App() {
         className="container water"
         style={{ paddingTop: "5%", paddingBottom: "5%" }}
       >
-        {/* Fish #1: Crab */}
         {array.slice(0, 15).map((animal, index) => {
           if (index % 2 == 0) {
             return (
@@ -192,7 +201,9 @@ function App() {
                   >
                     <p>{animal.facts}</p>
                     <h5>
-                      <a href="/">Learn more about the {animal.name}!</a>
+                      <a href={animal.link}>
+                        Learn more about the {animal.name}!
+                      </a>
                     </h5>
                   </div>
                 </div>
@@ -255,6 +266,8 @@ function App() {
                 style={{
                   backgroundColor: "#333", // Change background color
                   color: "#fff", // Change text color
+                  width: "350px", // Adjust the width as needed
+                  fontSize: "24px", // Adjust the font size as needed
                 }}
               >
                 <option value="" disabled selected>
