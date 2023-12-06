@@ -12,7 +12,7 @@ function shuffleArray(array) {
 function App() {
   const [array, setArray] = useState([
     {
-      name: "Angle Fish",
+      name: "Angelfish",
       facts:
         "Likes to eat sponges and algae, but can also nibble on sea fans, soft coral, and even jellyfish!",
       link: "/angleFish",

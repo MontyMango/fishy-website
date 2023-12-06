@@ -39,7 +39,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Helmet>
-          <title>Angle Fish</title>
+          <title>Angelfish</title>
         </Helmet>
         <AngleFish />
       </>
