@@ -56,7 +56,7 @@ const ClownFish3D = (props) => {
           }}
           className="absolute right-2 bottom-0 z-20 dark:text-black"
         >
-          Drag Mouse to Move
+          Drag Mouse to Move 3D Model
         </div>
         <Canvas
           className="canvas4"

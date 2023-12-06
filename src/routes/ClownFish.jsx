@@ -118,8 +118,31 @@ function ClownFish() {
             In exchange for safety from predators and food scraps, the clownfish
             drives off invaders and removes parasites from its host.
           </li>
+          <li style={{ marginBottom: "10px" }}>
+            Clownfish are sequential hermaphrodites, which means they have the
+            ability to change their sex during their lifetime. When the dominant
+            female dies, the largest male in the group will undergo a sex change
+            and become the new female.
+          </li>
+          <li style={{ marginBottom: "10px" }}>
+            Clownfish form a symbiotic relationship with sea anemones. The
+            clownfish are protected by the stinging tentacles of the anemones,
+            and in return, the clownfish provide the anemones with food in the
+            form of small prey and detritus.
+          </li>
         </ul>
       </div>
+
+      <iframe
+        title="Clownfish Educational Video"
+        src="https://www.youtube.com/embed/ndT2voMu4S0"
+        style={{
+          width: "100%",
+          height: "400px",
+        }}
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
 
       <div>
         <ClownFish3D />
