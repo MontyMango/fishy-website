@@ -66,7 +66,7 @@ const ClownFish3D = (props) => {
           <ambientLight intensity={0.5} />
           <directionalLight position={[-2, 5, 3]} intensity={1} />
 
-          <Suspense fallbak={null}>
+          <Suspense fallback={null}>
             <Clownfish />
           </Suspense>
         </Canvas>

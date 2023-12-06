@@ -1,8 +1,12 @@
 import React from "react";
+import Dolphin3D from "../components/Dolphin3D";
 
 const Dolphin = () => {
   return (
-    <p>Dolphin</p>
+    <div>
+      Dolphin
+      <Dolphin3D />
+    </div>
   );
 };
 
