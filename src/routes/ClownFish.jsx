@@ -18,7 +18,7 @@ function ClownFish() {
       <h1
         style={{
           textAlign: "center",
-          fontSize: "24px",
+          fontSize: "44px",
           marginBottom: "20px",
           color: "#00ccff", // Light blue for heading
         }}
