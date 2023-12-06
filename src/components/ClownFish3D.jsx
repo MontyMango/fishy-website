@@ -50,9 +50,14 @@ const ClownFish3D = (props) => {
   return (
     <Suspense>
       <div className="flex h-full relative">
-        <p className="absolute right-2 bottom-0 z-20 dark:text-black">
+        <div
+          style={{
+            fontSize: "20px",
+          }}
+          className="absolute right-2 bottom-0 z-20 dark:text-black"
+        >
           Drag Mouse to Move
-        </p>
+        </div>
         <Canvas
           className="canvas4"
           style={{ width: "100%", height: "500px" }} // Set the width and height to 100% of the parent container
