@@ -103,12 +103,19 @@ function App() {
       thumbnail: "/Assets/seahorse.png",
     },
     {
+      name: "Sea Urchin",
+      facts: "They can give humans boo-boos, but they don't mean to!",
+      link: "/seaurchin",
+      thumbnail: "/Assets/Urchin.png",
+    },
+    {
       name: "Seal",
       facts:
         "Cannot use hind flippers to move on land, so it “bounces” instead.",
       link: "/seal",
       thumbnail: "/Assets/seal.png",
     },
+
     {
       name: "South Blue Ring Octopus",
       facts:
@@ -122,6 +129,7 @@ function App() {
       link: "/shrimp",
       thumbnail: "/Assets/shrimp.png",
     },
+
     {
       name: "Walrus",
       facts:

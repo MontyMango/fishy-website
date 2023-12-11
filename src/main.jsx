@@ -23,6 +23,7 @@ import WhiteShark from "./routes/WhiteShark";
 import OrnateBoxTurtle from "./routes/OrnateBoxTurtle";
 import AnglerFIsh from "./routes/AnglerFIsh";
 import BWhale from "./routes/BWhale";
+import SeaUrchin from "./routes/SeaUrchin";
 
 const router = createBrowserRouter([
   {
@@ -187,6 +188,17 @@ const router = createBrowserRouter([
           <title>Seahorse</title>
         </Helmet>
         <Seahorse />
+      </>
+    ),
+  },
+  {
+    path: "/seaurchin",
+    element: (
+      <>
+        <Helmet>
+          <title>Sea Urchin</title>
+        </Helmet>
+        <SeaUrchin />
       </>
     ),
   },
