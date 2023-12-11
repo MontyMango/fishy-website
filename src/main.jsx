@@ -21,6 +21,8 @@ import Shrimp from "./routes/Shrimp";
 import Walrus from "./routes/Walrus";
 import WhiteShark from "./routes/WhiteShark";
 import OrnateBoxTurtle from "./routes/OrnateBoxTurtle";
+import AnglerFIsh from "./routes/AnglerFIsh";
+import BWhale from "./routes/BWhale";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +48,17 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "/anglerFish",
+    element: (
+      <>
+        <Helmet>
+          <title>Anglerfish</title>
+        </Helmet>
+        <AnglerFIsh />
+      </>
+    ),
+  },
+  {
     path: "/bass",
     element: (
       <>
@@ -53,6 +66,17 @@ const router = createBrowserRouter([
           <title>Bass</title>
         </Helmet>
         <Bass />
+      </>
+    ),
+  },
+  {
+    path: "/bluewhale",
+    element: (
+      <>
+        <Helmet>
+          <title>Blue Whale</title>
+        </Helmet>
+        <BWhale />
       </>
     ),
   },

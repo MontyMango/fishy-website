@@ -19,6 +19,12 @@ function App() {
       thumbnail: "/Assets/angelfish.png",
     },
     {
+      name: "Anglerfish",
+      facts: "Some anglerfish can produce their own source of light!",
+      link: "/anglerFish",
+      thumbnail: "/Assets/AnglerFish.png",
+    },
+    {
       name: "Atlantic Blue Crab",
       facts:
         "Likes to eat mussels, snails, fish plants, even other small blue crabs!",
@@ -31,6 +37,12 @@ function App() {
         "Sea bass are carnivorous, feeding on fish, crustaceans, mollusks, and other invertebrates.",
       link: "/bass",
       thumbnail: "/Assets/bass.png",
+    },
+    {
+      name: "Blue Whale",
+      facts: "Blue whales are the largest animals on the planet!",
+      link: "/bluewhale",
+      thumbnail: "/Assets/BWhale.png",
     },
     {
       name: "Clownfish",
