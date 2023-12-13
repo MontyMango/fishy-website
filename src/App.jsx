@@ -344,9 +344,12 @@ function App() {
                 color: "blue",
                 textDecoration: "underline",
                 fontSize: "22px",
+                transition: "color 0.3s", // Adding transition for smooth effect
               }}
+              onMouseOver={(e) => (e.target.style.color = "white")}
+              onMouseOut={(e) => (e.target.style.color = "blue")}
             >
-              Visualize animals depths
+              Visualize Animals Depths!
             </div>
           </div>
           <div style={{ marginTop: "16px" }}>
@@ -357,7 +360,10 @@ function App() {
                 color: "blue",
                 textDecoration: "underline",
                 fontSize: "22px",
+                transition: "color 0.3s", // Adding transition for smooth effect
               }}
+              onMouseOver={(e) => (e.target.style.color = "white")}
+              onMouseOut={(e) => (e.target.style.color = "blue")}
             >
               Can't Decide?
             </div>
