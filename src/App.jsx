@@ -341,13 +341,13 @@ function App() {
               onClick={() => (window.location.href = "/depth")}
               style={{
                 cursor: "pointer",
-                color: "blue",
+                color: "lightblue",
                 textDecoration: "underline",
                 fontSize: "22px",
                 transition: "color 0.3s", // Adding transition for smooth effect
               }}
               onMouseOver={(e) => (e.target.style.color = "white")}
-              onMouseOut={(e) => (e.target.style.color = "blue")}
+              onMouseOut={(e) => (e.target.style.color = "lightblue")}
             >
               Visualize Animals Depths!
             </div>
@@ -357,13 +357,13 @@ function App() {
               onClick={() => (window.location.href = "/spinner")}
               style={{
                 cursor: "pointer",
-                color: "blue",
+                color: "lightblue",
                 textDecoration: "underline",
                 fontSize: "22px",
                 transition: "color 0.3s", // Adding transition for smooth effect
               }}
               onMouseOver={(e) => (e.target.style.color = "white")}
-              onMouseOut={(e) => (e.target.style.color = "blue")}
+              onMouseOut={(e) => (e.target.style.color = "lightblue")}
             >
               Can't Decide?
             </div>
@@ -373,13 +373,13 @@ function App() {
             style={{
               marginTop: "16px",
               cursor: "pointer",
-              color: "blue",
+              color: "lightblue",
               textDecoration: "underline",
               fontSize: "12px",
               transition: "color 0.3s", // Adding transition for smooth effect
             }}
             onMouseOver={(e) => (e.target.style.color = "white")}
-            onMouseOut={(e) => (e.target.style.color = "blue")}
+            onMouseOut={(e) => (e.target.style.color = "lightblue")}
           >
             Game!
           </div>
