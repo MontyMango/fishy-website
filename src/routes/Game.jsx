@@ -128,86 +128,91 @@ const Game = () => {
   };
 
   return (
-    <div
-      style={{
-        width: "100%", // Take full width
-        display: "flex",
-        justifyContent: "center", // Center the content horizontally
-      }}
-    >
+    <>
+      Matching Game!
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(8, 100px)",
-          gap: "10px",
+          width: "100%", // Take full width
+          display: "flex",
+          justifyContent: "center", // Center the content horizontally
         }}
       >
-        {cards.map((card) => (
-          <div
-            key={card.id}
-            onClick={() => handleCardClick(card.id)}
-            style={{
-              width: "100px",
-              height: "100px",
-              backgroundColor: "white",
-              border: `5px solid ${card.isMatched ? "green" : "#ccc"}`, // Green border for matched cards
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer",
-              ":hover": {
-                backgroundColor: "#f0f0f0",
-              },
-            }}
-            className={`card ${card.isFlipped ? "flipped" : ""} ${
-              card.isMatched ? "matched" : ""
-            }`}
-          >
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(8, 100px)",
+            gap: "10px",
+          }}
+        >
+          {cards.map((card) => (
             <div
+              key={card.id}
+              onClick={() => handleCardClick(card.id)}
               style={{
-                width: "100%",
-                height: "100%",
+                width: "100px",
+                height: "100px",
+                backgroundColor: "white",
+                border: `5px solid ${card.isMatched ? "green" : "#ccc"}`, // Green border for matched cards
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                perspective: "1000px",
-                transform: card.isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
-                position: "relative",
+                cursor: "pointer",
+                ":hover": {
+                  backgroundColor: "#f0f0f0",
+                },
               }}
+              className={`card ${card.isFlipped ? "flipped" : ""} ${
+                card.isMatched ? "matched" : ""
+              }`}
             >
-              {card.isFlipped || card.isMatched ? (
-                <img
-                  src={card.photo}
-                  alt={`Card ${card.id}`}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              ) : (
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: "#333",
-                    color: "white",
-                    fontSize: "24px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    position: "absolute",
-                    backfaceVisibility: "hidden",
-                  }}
-                >
-                  ?
-                </div>
-              )}
+              <div
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  perspective: "1000px",
+                  transform: card.isFlipped
+                    ? "rotateY(180deg)"
+                    : "rotateY(0deg)",
+                  position: "relative",
+                }}
+              >
+                {card.isFlipped || card.isMatched ? (
+                  <img
+                    src={card.photo}
+                    alt={`Card ${card.id}`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      backgroundColor: "#333",
+                      color: "white",
+                      fontSize: "24px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      position: "absolute",
+                      backfaceVisibility: "hidden",
+                    }}
+                  >
+                    ?
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
