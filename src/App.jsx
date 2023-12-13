@@ -300,58 +300,67 @@ function App() {
             );
           }
         })}
-        <div style={{ fontSize: "1em" }}>Not seeing your animal?</div>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg">
-              <select
-                className="form-select"
-                aria-label="Select an animal"
-                onChange={handleDropdownChange}
-                style={{
-                  backgroundColor: "#333",
-                  color: "#fff",
-                  width: "350px",
-                  fontSize: "24px",
-                }}
-              >
-                <option>Select an animal</option>
-                {array.slice(15).map((animal) => (
-                  <option key={animal.name} value={animal.name}>
-                    {animal.name}
-                  </option>
-                ))}
-              </select>
+        <div>
+          {" "}
+          <div
+            style={{
+              border: "2px solid #ccc",
+              padding: "10px",
+              borderRadius: "10px",
+            }}
+          >
+            <div style={{ fontSize: "1em" }}>Not seeing your animal?</div>
+            <div className="container">
+              <div className="row">
+                <div className="col-lg">
+                  <select
+                    className="form-select"
+                    aria-label="Select an animal"
+                    onChange={handleDropdownChange}
+                    style={{
+                      backgroundColor: "#333",
+                      color: "#fff",
+                      width: "350px",
+                      fontSize: "24px",
+                    }}
+                  >
+                    <option>Select an animal</option>
+                    {array.slice(15).map((animal) => (
+                      <option key={animal.name} value={animal.name}>
+                        {animal.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                {/* Text Link to Visualize Depths */}
+              </div>
             </div>
-            {/* Text Link to Visualize Depths */}
           </div>
-        </div>
-
-        <div style={{ marginTop: "16px" }}>
-          <div
-            onClick={() => (window.location.href = "/depth")}
-            style={{
-              cursor: "pointer",
-              color: "blue",
-              textDecoration: "underline",
-              fontSize: "22px",
-            }}
-          >
-            Visualize animals depths
+          <div style={{ marginTop: "16px" }}>
+            <div
+              onClick={() => (window.location.href = "/depth")}
+              style={{
+                cursor: "pointer",
+                color: "blue",
+                textDecoration: "underline",
+                fontSize: "22px",
+              }}
+            >
+              Visualize animals depths
+            </div>
           </div>
-        </div>
-
-        <div style={{ marginTop: "16px" }}>
-          <div
-            onClick={() => (window.location.href = "/spinner")}
-            style={{
-              cursor: "pointer",
-              color: "blue",
-              textDecoration: "underline",
-              fontSize: "22px",
-            }}
-          >
-            Can't Decide?
+          <div style={{ marginTop: "16px" }}>
+            <div
+              onClick={() => (window.location.href = "/spinner")}
+              style={{
+                cursor: "pointer",
+                color: "blue",
+                textDecoration: "underline",
+                fontSize: "22px",
+              }}
+            >
+              Can't Decide?
+            </div>
           </div>
         </div>
       </div>
