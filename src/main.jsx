@@ -24,6 +24,7 @@ import OrnateBoxTurtle from "./routes/OrnateBoxTurtle";
 import AnglerFIsh from "./routes/AnglerFIsh";
 import BWhale from "./routes/BWhale";
 import SeaUrchin from "./routes/SeaUrchin";
+import Depth from "./routes/Depth";
 
 const router = createBrowserRouter([
   {
@@ -254,6 +255,17 @@ const router = createBrowserRouter([
           <title>Walrus</title>
         </Helmet>
         <Walrus />
+      </>
+    ),
+  },
+  {
+    path: "/depth",
+    element: (
+      <>
+        <Helmet>
+          <title>Animal Depth Visualized</title>
+        </Helmet>
+        <Depth />
       </>
     ),
   },

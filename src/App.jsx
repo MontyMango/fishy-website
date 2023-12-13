@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import Depth from "./routes/Depth";
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -17,12 +18,14 @@ function App() {
         "Likes to eat sponges and algae, but can also nibble on sea fans, soft coral, and even jellyfish!",
       link: "/angleFish",
       thumbnail: "/Assets/angelfish.png",
+      depth: "60 feet",
     },
     {
       name: "Anglerfish",
       facts: "Some anglerfish can produce their own source of light!",
       link: "/anglerFish",
       thumbnail: "/Assets/AnglerFish.png",
+      depth: "16,404 feet",
     },
     {
       name: "Atlantic Blue Crab",
@@ -30,6 +33,7 @@ function App() {
         "Likes to eat mussels, snails, fish plants, even other small blue crabs!",
       link: "/crab",
       thumbnail: "/Assets/a_crab.png",
+      depth: "50 feet",
     },
     {
       name: "Bass",
@@ -37,25 +41,29 @@ function App() {
         "Sea bass are carnivorous, feeding on fish, crustaceans, mollusks, and other invertebrates.",
       link: "/bass",
       thumbnail: "/Assets/bass.png",
+      depth: "260 feet",
     },
     {
       name: "Blue Whale",
       facts: "Blue whales are the largest animals on the planet!",
       link: "/bluewhale",
       thumbnail: "/Assets/BWhale.png",
+      depth: "1640 feet",
     },
     {
       name: "Clownfish",
       facts:
-        "A layer of mucus on clownfish`s skin makes it immune to fish-eating anemone`s stings.",
+        "A layer of mucus on clownfish's skin makes it immune to fish-eating anemone's stings.",
       link: "/clownFish",
       thumbnail: "/Assets/clownfish.png",
+      depth: "50 feet",
     },
     {
       name: "Dolphin",
       facts: "Can swim at speeds of 18 miles per hour",
       link: "/dolphin",
       thumbnail: "/Assets/dolphin.png",
+      depth: "850 feet",
     },
     {
       name: "Flounder",
@@ -63,25 +71,29 @@ function App() {
         "Called chameleons of the sea - can change color to blend in with their environment",
       link: "/flounder",
       thumbnail: "/Assets/flounder.png",
+      depth: "100 feet",
     },
     {
       name: "Humpback Whale",
       facts:
-        "Will occasionally come together in a “super” group of 200 (unknown why).",
+        "Will occasionally come together in a 'super' group of 200 (unknown why).",
       link: "/humpbackWhale",
       thumbnail: "/Assets/h_whale.png",
+      depth: "700 feet",
     },
     {
       name: "King Penguin",
       facts: "Can scarf down as many as 2000 fish in a single day.",
       link: "/kingPenguin",
       thumbnail: "/Assets/penguin.png",
+      depth: "50 feet",
     },
     {
       name: "Ornate Box Turtle",
       facts: "Can live up to 37 years long! And some people keep them as pets.",
       link: "/turtle",
       thumbnail: "/Assets/o_turtle.png",
+      depth: "20 feet",
     },
     {
       name: "Orca",
@@ -89,53 +101,59 @@ function App() {
         "Uses echolocation to communicate, attack, and work together. Also known as killer whales.",
       link: "/orca",
       thumbnail: "/Assets/orca.png",
+      depth: "2500 feet",
     },
     {
       name: "Pacific Octopus",
       facts: "Grows bigger, and lives longer than any other octopus species!",
       link: "/octopus",
       thumbnail: "/Assets/p_octopus.png",
+      depth: "300 feet",
     },
     {
       name: "Seahorse",
       facts: "It has eyes that work independently of each other.",
       link: "/seahorse",
       thumbnail: "/Assets/seahorse.png",
+      depth: "50 feet",
     },
     {
       name: "Sea Urchin",
       facts: "They can give humans boo-boos, but they don't mean to!",
       link: "/seaurchin",
       thumbnail: "/Assets/Urchin.png",
+      depth: "50 feet",
     },
     {
       name: "Seal",
       facts:
-        "Cannot use hind flippers to move on land, so it “bounces” instead.",
+        "Cannot use hind flippers to move on land, so it 'bounces' instead.",
       link: "/seal",
       thumbnail: "/Assets/seal.png",
+      depth: "1500 feet",
     },
-
     {
       name: "South Blue Ring Octopus",
       facts:
         "Potent venom strong enough to kill a human (no known anti-venom to treat bitten person).",
       link: "/octo",
       thumbnail: "/Assets/sbr_octopus.png",
+      depth: "20 feet",
     },
     {
       name: "Shrimp",
       facts: "Can swim backwards!",
       link: "/shrimp",
       thumbnail: "/Assets/shrimp.png",
+      depth: "200 feet",
     },
-
     {
       name: "Walrus",
       facts:
         "Male walruses employ their tusks aggressively to maintain territory.",
       link: "/walrus",
       thumbnail: "/Assets/walrus.png",
+      depth: "150 feet",
     },
     {
       name: "White Shark",
@@ -143,6 +161,7 @@ function App() {
         "Has special cells (melanocytes) that helps with their cloaking ability to sneak up on prey.",
       link: "/shark",
       thumbnail: "/Assets/shark.png",
+      depth: "3,900 feet",
     },
   ]);
 
@@ -210,6 +229,9 @@ function App() {
                     <a href={animal.link}>
                       <img src={animal.thumbnail} />
                     </a>
+                    <div style={{ fontSize: "22px" }}>
+                      Deepest Depth: {animal.depth}
+                    </div>
                   </div>
                   {/* Right Description Column */}
                   <div
@@ -268,6 +290,9 @@ function App() {
                       <a href={animal.link}>
                         <img src={animal.thumbnail} />
                       </a>
+                      <div style={{ fontSize: "22px" }}>
+                        Deepest Depth: {animal.depth}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -275,7 +300,7 @@ function App() {
             );
           }
         })}
-        <p style={{ fontSize: "1em" }}>Not seeing your animal?</p>
+        <div style={{ fontSize: "1em" }}>Not seeing your animal?</div>
         <div className="container">
           <div className="row">
             <div className="col-lg">
@@ -284,40 +309,37 @@ function App() {
                 aria-label="Select an animal"
                 onChange={handleDropdownChange}
                 style={{
-                  backgroundColor: "#333", // Change background color
-                  color: "#fff", // Change text color
-                  width: "350px", // Adjust the width as needed
-                  fontSize: "24px", // Adjust the font size as needed
+                  backgroundColor: "#333",
+                  color: "#fff",
+                  width: "350px",
+                  fontSize: "24px",
                 }}
               >
-                <option value="" disabled selected>
-                  Select an animal
-                </option>
-                {array.map((animal) => (
+                <option>Select an animal</option>
+                {array.slice(15).map((animal) => (
                   <option key={animal.name} value={animal.name}>
                     {animal.name}
                   </option>
                 ))}
               </select>
             </div>
+            {/* Text Link to Visualize Depths */}
           </div>
         </div>
-        <footer>
+
+        <div style={{ marginTop: "16px" }}>
           <div
-            className="container"
-            style={{ paddingTop: "5%", paddingLeft: "10%" }}
+            onClick={() => (window.location.href = "/depth")}
+            style={{
+              cursor: "pointer",
+              color: "blue",
+              textDecoration: "underline",
+              fontSize: "22px",
+            }}
           >
-            <div className="row">
-              <div className="col-lg-12">
-                <p>
-                  This informative website was made possible by team 3 (Nathan
-                  Bilancio, Cameron Harter, Alexander Hershberger, and Palmer
-                  Vu)
-                </p>
-              </div>
-            </div>
+            Visualize animals depths
           </div>
-        </footer>
+        </div>
       </div>
     </>
   );
