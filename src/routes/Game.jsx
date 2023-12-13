@@ -85,7 +85,6 @@ const Game = () => {
       const [firstCard, secondCard] = flippedCards;
 
       if (firstCard.photo === secondCard.photo) {
-        setMatchedPairs([...matchedPairs, firstCard.photo]);
         setCards((prevCards) =>
           prevCards.map((card) =>
             card.id === firstCard.id || card.id === secondCard.id
@@ -109,7 +108,7 @@ const Game = () => {
         setFlippedCards([]);
       }, 1000);
     }
-  }, [flippedCards, matchedPairs]);
+  }, [flippedCards]);
 
   const handleCardClick = (id) => {
     const selectedCard = cards.find((card) => card.id === id);
