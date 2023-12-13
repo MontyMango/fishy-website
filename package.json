@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.15.0",
+    "react-wheel-of-prizes": "^1.0.9",
     "sort-by": "^1.2.0",
     "three": "^0.156.1"
   },

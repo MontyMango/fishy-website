@@ -340,6 +340,20 @@ function App() {
             Visualize animals depths
           </div>
         </div>
+
+        <div style={{ marginTop: "16px" }}>
+          <div
+            onClick={() => (window.location.href = "/spinner")}
+            style={{
+              cursor: "pointer",
+              color: "blue",
+              textDecoration: "underline",
+              fontSize: "22px",
+            }}
+          >
+            Can't Decide?
+          </div>
+        </div>
       </div>
     </>
   );

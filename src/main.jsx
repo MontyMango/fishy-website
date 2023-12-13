@@ -25,6 +25,7 @@ import AnglerFIsh from "./routes/AnglerFIsh";
 import BWhale from "./routes/BWhale";
 import SeaUrchin from "./routes/SeaUrchin";
 import Depth from "./routes/Depth";
+import FishSpinner from "./routes/FishSpinner";
 
 const router = createBrowserRouter([
   {
@@ -266,6 +267,17 @@ const router = createBrowserRouter([
           <title>Animal Depth Visualized</title>
         </Helmet>
         <Depth />
+      </>
+    ),
+  },
+  {
+    path: "/spinner",
+    element: (
+      <>
+        <Helmet>
+          <title>Can't Choose?? Let the Wheel Decide!!!!</title>
+        </Helmet>
+        <FishSpinner />
       </>
     ),
   },
