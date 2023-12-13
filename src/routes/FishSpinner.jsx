@@ -192,6 +192,7 @@ const FishSpinner = () => {
   };
   return (
     <div>
+      Can't Choose?? Let the Wheel Decide!!!!
       <div
         style={{
           display: "flex",

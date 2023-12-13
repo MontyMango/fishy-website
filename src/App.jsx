@@ -368,6 +368,21 @@ function App() {
               Can't Decide?
             </div>
           </div>
+          <div
+            onClick={() => (window.location.href = "/game")}
+            style={{
+              marginTop: "16px",
+              cursor: "pointer",
+              color: "blue",
+              textDecoration: "underline",
+              fontSize: "12px",
+              transition: "color 0.3s", // Adding transition for smooth effect
+            }}
+            onMouseOver={(e) => (e.target.style.color = "white")}
+            onMouseOut={(e) => (e.target.style.color = "blue")}
+          >
+            Game!
+          </div>
         </div>
       </div>
     </>

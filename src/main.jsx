@@ -26,6 +26,7 @@ import BWhale from "./routes/BWhale";
 import SeaUrchin from "./routes/SeaUrchin";
 import Depth from "./routes/Depth";
 import FishSpinner from "./routes/FishSpinner";
+import Game from "./routes/Game";
 
 const router = createBrowserRouter([
   {
@@ -278,6 +279,17 @@ const router = createBrowserRouter([
           <title>Can't Choose?? Let the Wheel Decide!!!!</title>
         </Helmet>
         <FishSpinner />
+      </>
+    ),
+  },
+  {
+    path: "/game",
+    element: (
+      <>
+        <Helmet>
+          <title>Game</title>
+        </Helmet>
+        <Game />
       </>
     ),
   },
