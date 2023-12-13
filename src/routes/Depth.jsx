@@ -69,7 +69,7 @@ function Depth() {
         "Will occasionally come together in a 'super' group of 200 (unknown why).",
       link: "/humpbackWhale",
       thumbnail: "/Assets/h_whale.png",
-      depth: "700 feet",
+      depth: "2700 feet",
     },
     {
       name: "King Penguin",
